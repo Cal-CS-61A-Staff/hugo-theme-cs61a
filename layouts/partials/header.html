@@ -92,7 +92,7 @@
           <div id="chapter">
         {{ end }}
         <div id="body-inner">
-          {{if and (not .IsHome) (ne .File.LogicalName "_index.md") }}
+          {{if not .IsHome }}
             <h1>
               {{ if eq .Kind "taxonomy" }}
                 {{.Kind}} ::
@@ -104,7 +104,11 @@
         {{define "breadcrumb"}}
           {{$parent := .page.Parent }}
           {{ if $parent }}
-            {{ $value := (printf "<a href='%s'>%s</a> > %s" $parent.RelPermalink $parent.Title .value) }}
+            {{ $pt := "Home" }}
+            {{ if $parent.Title }}
+              {{ $pt = $parent.Title }}
+            {{ end }}
+            {{ $value := (printf "<a href='%s'>%s</a> > %s" $parent.RelPermalink $pt .value) }}
             {{ template "breadcrumb" dict "page" $parent "value" $value }} 
           {{else}}
             {{.value|safeHTML}}

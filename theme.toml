@@ -15,7 +15,7 @@ min_version = 0.25
   name = "Vanshaj Singhania"
   homepage = "https://imvs.me"
 
-[original]
+[original_port]
   name = "Mathieu Cornic"
   homepage = "https://matcornic.github.io/"
   repo = "https://github.com/matcornic/hugo-theme-learn"
