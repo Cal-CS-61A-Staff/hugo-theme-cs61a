@@ -60,7 +60,7 @@
                   </div>
                   {{ end }}
                 {{ end }}
-                {{$toc := (and (not .Params.disableToc) (ne .File.LogicalName "_index.md"))}}
+                {{$toc := (not .Params.disableToc)}}
                 <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                     <span id="sidebar-toggle-span">
                         <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
@@ -88,7 +88,7 @@
         <div id="head-tags">
         {{ partial "tags.html" . }}
         </div>
-        {{ if eq .File.LogicalName "_index.md" }}
+        {{ if .IsHome }}
           <div id="chapter">
         {{ end }}
         <div id="body-inner">

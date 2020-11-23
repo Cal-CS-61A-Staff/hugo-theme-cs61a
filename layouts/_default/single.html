@@ -2,7 +2,7 @@
 
 {{ .Content }}
 <hr>
-{{ if and (not .IsHome) (ne .File.LogicalName "_index.md")}}
+{{ if not .IsHome }}
 	{{ if .Params.authors }}
 		Contributors: {{ delimit .Params.authors ", "}}
 	{{end}}
