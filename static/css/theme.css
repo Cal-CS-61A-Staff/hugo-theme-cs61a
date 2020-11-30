@@ -414,7 +414,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 }
 #body-inner {
     margin-bottom: 5rem;
-    max-width: 75vw;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
 }
