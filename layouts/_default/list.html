@@ -1,5 +1,11 @@
 {{ partial "header.html" . }}
 
+{{ if not .IsHome }}
+	{{ if .Params.contrib }}
+		Code contributors: {{ delimit .Params.contrib ", "}}
+	{{end}}
+{{end}}
+
 {{ if eq .Kind "section" }}
 	{{ .Content }}
 {{end}}

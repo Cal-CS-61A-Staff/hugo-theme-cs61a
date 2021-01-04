@@ -3,10 +3,10 @@
 
 name = "CS61A"
 license = "MIT"
-licenselink = "https://github.com/itsvs/hugo-theme-cs61a/blob/master/LICENSE.md"
+licenselink = "https://github.com/Cal-CS-61A-Staff/hugo-theme-cs61a/blob/master/LICENSE.md"
 description = "CS61A documentation theme for Hugo, based on Grav Learn theme"
-homepage = "https://github.com/itsvs/hugo-theme-cs61a/"
-repo = "https://github.com/itsvs/hugo-theme-cs61a"
+homepage = "https://github.com/Cal-CS-61A-Staff/hugo-theme-cs61a/"
+repo = "https://github.com/Cal-CS-61A-Staff/hugo-theme-cs61a"
 tags = ["documentation", "grav", "learn", "doc", "search"]
 features = ["documentation", "menu", "nested sections", "search", "mermaid"]
 min_version = 0.25
